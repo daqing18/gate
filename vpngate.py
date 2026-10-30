@@ -86,13 +86,13 @@ EDGE_HOSTS = [
     for h in os.environ.get(
         "EDGE_HOSTS",
        
-        "saas.sin.fan:443,cdn.204910.best:443,cf.877774.xyz:443,103.26.8.38:443",
+        "103.26.8.38:443",
     ).split(",")
     if h.strip()
 ]
 
 # 优选 API 地址配置 (支持逗号分隔多个，可配置在 GitHub Action Secret / Env 中)
-OPTIMAL_API = os.environ.get("OPTIMAL_API", "https://cf.090227.xyz/cu?port=443")
+OPTIMAL_API = os.environ.get("OPTIMAL_API", "")
 
 NODES_URL = os.environ.get("NODES_URL", "https://daqing18.github.io/gate/nodes.txt")
 
