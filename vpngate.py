@@ -86,13 +86,13 @@ EDGE_HOSTS = [
     for h in os.environ.get(
         "EDGE_HOSTS",
        
-        "103.26.8.38:443",
+        "27.44.142.135:10001#Hong Kong,120.240.179.157:10001#Hong Kong,120.240.179.158:10001#Hong Kong,177.3.91.127:8443#Tokyo",
     ).split(",")
     if h.strip()
 ]
 
 # 优选 API 地址配置 (支持逗号分隔多个，可配置在 GitHub Action Secret / Env 中)
-OPTIMAL_API = os.environ.get("OPTIMAL_API", "")
+OPTIMAL_API = os.environ.get("OPTIMAL_API", "https://bestcf.pages.dev/xinyitang3/ipv4.txt")
 
 NODES_URL = os.environ.get("NODES_URL", "https://daqing18.github.io/gate/nodes.txt")
 
