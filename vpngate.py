@@ -86,7 +86,7 @@ EDGE_HOSTS = [
     for h in os.environ.get(
         "EDGE_HOSTS",
        
-        "27.44.142.135:10001#Hong Kong,120.240.179.157:10001#Hong Kong,120.240.179.158:10001#Hong Kong,177.3.91.127:8443#Tokyo",
+        "120.240.179.157:10001#Hong Kong,120.240.179.158:10001#Hong Kong-30ms-55.15MB/s,177.3.91.127:8443#Tokyo,56.69.125.222:443#Singapore,56.69.220.234:443#Singapore,56.69.208.131:443#Singapore,43.217.57.234:443#Singapore,183.101.136.209:443#Seattle-85ms-21.35MB/s,115.1.222.80:443#Seoul-98ms-16.20MB/s,140.235.98.138:443#Hong Kong-49ms-51.40MB/s,4.194.113.191:443#Singapore-66ms-25.88MB/s-Microsoft Corporation,140.115.53.51:443#Taipei-191ms-10.79MB/s-Jyun-Kai Hu",
     ).split(",")
     if h.strip()
 ]
